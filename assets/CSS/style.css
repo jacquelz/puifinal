@@ -1,0 +1,123 @@
+/*********** index ************/
+nav {
+    margin: 40px 0;
+    font-family: Helvetica;
+}
+
+.bold {
+  color: indigo;
+  font-weight: bold;
+}
+
+.jumbotron {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    background-color: #E6E6FA;
+    font-family: Helvetica;
+    transition: .5s;
+}
+
+.jumbotron:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+    transform: scale(1,1);
+}
+
+.pic {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    margin: 20px 0;
+    transition: .5s;
+    width: 100%;
+}
+
+.pic:hover {
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.5);
+    transform: scale(1,1);
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 40px;
+}
+
+/*********** about ************/
+.typing {
+    text-align: center;
+    color: indigo;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: typewriter 4s steps(30) 0.5s 1 normal both,
+        blinkTextCursor 1.5s steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 11em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: indigo;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*********** philips + upcycled ************/
+.highlight {
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #E6E6FA 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.15em;
+    transition: background-position 0.5s ease-out;
+}
+
+.highlight:hover {
+    background-position: -99.99% 0;
+    color: grey;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #E6E6FA;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    font-size: 0.8em;
+}
+
+button:hover {
+    background-color: indigo;
+    color: white;
+}
+
+button:focus {
+    background-color: indigo;
+    color: white;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    width: 20%;
+}
+
+.resize {
+    border-radius: 20px;
+    margin: 20px 0;
+    transition: .5s;
+    width: 100%;
